@@ -1,7 +1,7 @@
 {
   "name": "min-jspm",
   "version": "0.1.0",
-  "main": "server.js",
+  "main": "index.js",
   "description": "My project",
   "license": "ISC",
   "repository": {
@@ -13,8 +13,9 @@
     "port": "8001"
   },
   "scripts": {
-    "start": "node server",
-    "pub": "npm version patch && npm publish && git push"
+    "start": "gulp",
+    "pub": "npm version patch && npm publish && git push",
+    "postinstall": "jspm init -y"
   },
   "keywords": [
     "min-jspm"
