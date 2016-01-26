@@ -1,0 +1,30 @@
+{
+  "name": "min-jspm",
+  "version": "0.1.0",
+  "main": "server.js",
+  "description": "My project",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriz/min-jspm.git"
+  },
+  "author": "Dmitri Zaitsev <dmitri14@gmail.com> (https://github.com/dmitriz)",
+  "config": {
+    "port": "8001"
+  },
+  "scripts": {
+    "start": "node server",
+    "pub": "npm version patch && npm publish && git push"
+  },
+  "keywords": [
+    "min-jspm"
+  ],
+  "bugs": {
+    "url": "https://github.com/dmitriz/min-jspm/issues"
+  },
+  "homepage": "https://github.com/dmitriz/min-jspm#readme",
+  "dependencies": {
+    "jspm": "^0.16.25",
+    "min-server": "^1.0.0"
+  }
+}
